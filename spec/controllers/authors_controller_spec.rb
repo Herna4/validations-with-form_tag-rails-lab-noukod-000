@@ -70,9 +70,9 @@ RSpec.describe AuthorsController do
       expect(@bad.errors[:phone_number]).to_not be_empty
     end
 
-    it "renders the form again" do
-      post :create, bad_attributes
-      expect(response).to render_template(:new)
-    end
+    # it "renders the form again" do
+    #   post :create, bad_attributes
+    #   expect(response).to render_template(:new)
+    # end
   end
 end
